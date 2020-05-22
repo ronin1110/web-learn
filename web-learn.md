@@ -122,7 +122,86 @@ text-align规定元素中的文本的水平对齐方式
 
 
 
- 
+用于短的引用：
+
+用<q></q>标签来表示
+
+长的引用用<blockquote>来表示</blockquote>
+
+缩略词的引用：
+
+<abbr title="world health origanization">who</abbr>
+
+<address>
+    editor<br>
+    visit us at:<br>
+    111111.com<br>
+    包括一些文档或文章的联系方式
+</address>
+
+
+
+<cite>
+
+html site 元素定义著作的标题
+
+</cite>
+
+
+
+<bdo dir="rtl">
+    "<bdo>"定义双向流覆盖
+
+</bdo>
+
+
+
+
+
+计算机代码元素：
+
+通常，HTML 使用*可变*的字母尺寸，以及可变的字母间距。
+
+在显示*计算机代码*示例时，并不需要如此。
+
+<kdb>, <sample>, 以及 <code> 元素全都支持固定的字母尺寸和间距。
+
+
+
+<var>var定义数学变量</var>
+
+
+
+ <!--注释>
+
+
+
+
+
+css样式：
+
+外部样式：
+
+<head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css"
+</head>
+
+内部样式表：
+
+<head>
+    <style type="text/css">
+        body {background-color:red}
+        p {margin-left:20px}
+    </style>
+</head>
+
+
+
+内联样式：
+
+<p style=" color: red;margin-left :20px">
+    内联样式示例
+</p>
 
 
 
@@ -132,9 +211,74 @@ text-align规定元素中的文本的水平对齐方式
 
 
 
+html链接：
+
+<a href="www.baidu.com" taget= "_blank">
+
+百度的链接
+
+</a>
 
 
 
+链接的一些属性：
+
+name属性等于id
+
+用于定义锚的名称：
+
+<a name="warnings">
+
+提示
+
+</a>
+
+在其他地方就可以通过warning来访问到了
+
+
+
+同一个网页中：
+
+<a href="#warnings">
+
+转到同网页的warning
+
+</a>
+
+不同网页中：
+
+<a href="test.html#warings"
+
+不同网页要加上网页地址
+
+</a>
+
+
+
+图像：
+
+
+
+<img>标签 是空标签所以没有闭合标签 只有属性
+
+src属性：值是指向图像的url地址
+
+alt属性： 替换文本：用于图片没有加载的时候显示
+
+
+
+<map name="image" id="image"></map>
+
+<map>标签 ：定义图像地图 可以点击一张图片的不同区域 链接到不同地址
+
+
+
+<table>
+    table标签用来显示表格
+    <tr>tr标签显示行
+    <td>td标签用来显示列</td>
+    </tr>
+</table>
 
 
 

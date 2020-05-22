@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d16249c-36c6-4015-9a0d-f8ea14b5fff6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-html/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/learn-html/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-learn.md" beforeDir="false" afterPath="$PROJECT_DIR$/web-learn.md" afterDir="false" />
-    </list>
+    <list default="true" id="8c12b8b0-d432-4dea-b97a-f1ef583a4be1" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +16,10 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1c9OiP98RoWFYXh8YwHVeLBKBJY" />
+  <component name="ProjectId" id="1c9Ost2I52Ykrn5Fq5gXOjqDjmq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -44,14 +41,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5d16249c-36c6-4015-9a0d-f8ea14b5fff6" name="Default Changelist" comment="" />
-      <created>1589937469174</created>
+      <changelist id="8c12b8b0-d432-4dea-b97a-f1ef583a4be1" name="Default Changelist" comment="" />
+      <created>1589937552249</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1589937469174</updated>
-      <workItem from="1589937488513" duration="65000" />
-      <workItem from="1590062642585" duration="765000" />
-      <workItem from="1590082445091" duration="3611000" />
+      <updated>1589937552249</updated>
+      <workItem from="1589937553669" duration="4909000" />
     </task>
     <servers />
   </component>
@@ -63,9 +58,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
