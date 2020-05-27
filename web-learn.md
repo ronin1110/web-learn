@@ -280,6 +280,434 @@ alt属性： 替换文本：用于图片没有加载的时候显示
     </tr>
 </table>
 
+。。。。。。
+
+
+
+
+
+列表：
+
+有序无序和定义列表：
+
+无序列表用ul标签标示
+
+<ul>
+    <li>
+    每个项用li表示，有个小点</li>
+    <li>
+    可使用图片，段落，换行符，图片还有链接</li>
+</ul>
+
+
+
+有序列表用ol表示
+
+<ol>
+    <li>
+        内容同无序
+    </li>
+    <li>
+    coffee
+    </li>
+    <li>
+    ...</li>
+</ol>
+
+
+
+自定义列表：
+
+用dl标签开始
+
+自定义列表项以dt开始
+
+列表项定义以dd开始
+
+<dl>
+    <dt>coffee</dt>
+    <dd>Black hot drink</dd>
+    <dt>milk</dt>
+    <dd>white cold drink</dd>
+</dl>
+
+
+
+块：
+
+html元素一般包括块级元素（换行）与内联函数（不换行）
+
+div元素是块级元素，用于组合其他元素的容器
+
+相对应的span内联元素用以文本容器，组合行内元素
+
+
+
+
+
+布局：
+
+div元素布局通过css给样式
+
+html5语义元素：
+
+header： 页眉
+
+nav：导航链接的容器
+
+section：文章中的节
+
+article：定义独立的自包含的文章
+
+aside：文章之外的内容
+
+footer：页脚
+
+details：定义额外的细节
+
+summary：定义details的标题
+
+
+
+
+
+框架：frameset
+
+同一个页面显示多个不同的网页
+
+用frameset标签标示：
+
+rows/columns的值定义每行或者裂占的比例
+
+
+
+内联框架：
+
+用于在网页内显示网页：
+
+<iframe src="https://www.baidu.com" >
+</iframe>
+
+
+
+
+
+网页背景颜色：
+
+<body bgcolor="#000000">
+
+<body bgcolor="rgb(0,0,0)">
+
+<body bgcolor="black">
+
+
+
+背景：
+
+<body background="xxx.gif">
+
+<body background="url">
+
+
+
+html的文件路径：
+
+绝对路径：完整的url
+
+相对路径：相对于当前页面的文件
+
+尽量使用相对路径
+
+
+
+
+
+html头部元素
+
+用head表示：其中可以包含的脚本，样式表，提供元信息等等
+
+可包含<title><base><link><script><style>
+
+
+
+base标签规定了页面所有的链接规定的默认地址或者默认目标（target）
+
+link元素一般用以链接样式表
+
+style标签可以规定样式
+
+meta元素定义关于html的元数据
+
+
+
+
+
+统一资源定位器
+
+http不加密
+
+https安全超文本传输协议，网页加密
+
+ftp 文件传输协议
+
+file  本机文件
+
+
+
+
+
+html url编码：
+
+url只能用ascii字符集来通过英特网进行发送
+
+之外的字符会通过%及其随后的两位十六进制数来替代为有效的ascii格式
+
+
+
+html颜色
+
+三原色：RGB不同的值组成不同的颜色
+
+color HEX：#000000->#ffffff
+
+color RGB：rgb（0,0,0）->rgb(255,255,255)
+
+
+
+
+
+
+
+xhtml标准：
+
+语法规则：
+
+属性小写，属性值加引号，属性简写禁止；
+
+
+
+
+
+
+
+html表单：
+
+form元素：用于收集用户输入
+
+表单元素：
+
+input 元素：text  定义常规文本输入
+
+​		·			 radio：定义单选按钮输入
+
+​					 submit： 定义提交按钮（提交表单）
+
+
+
+文本输入：
+
+<input type="text">
+
+<input type="radio" values="nmsl">
+
+<input type="submit" values="提交">
+
+action属性是在提交表单时执行的动作
+
+如果省略，默认当前的页面为
+
+指定的页面。
+
+
+
+method属性：
+
+规定提交表单时所用到的get和post方发（http）
+
+<form action="....." method="GET/POSt">
+    !!!!!!!!
+
+</form>
+
+name属性：
+
+想要正确的提交每个提交的字段，必须有一个name属性。没有就不会提交。
+
+
+
+fileset标签足额表单的相关属性
+
+legend元素为fileset元素定义标题
+
+
+
+form标签的属性：accept-charset 规定提交表单中的使用的字符集
+
+action 向何处提交表单
+
+autocomplete 默认自动完成表单
+
+enctype 提交数据的编码 默认url
+
+method属性：规定提交表单时所用到的get和post方发（http）
+
+name 标示： 名称
+
+target ：默认的目标地址
+
+
+
+
+
+html的表单元素：
+
+<input>元素 有不同类型 可有多种形态
+
+<select> 
+    <option  value="shabi">
+ 	 shabi 元素 下拉列表
+    </option>
+    <option  value="shabi">
+  	shabi 
+    </option>
+    <option  value="shabi">
+  	 shabi 
+    </option>
+</select>
+
+
+
+<textarea rows="5" cols="5">
+    文本域
+</textarea>
+
+<button type="button">表单按钮组件
+
+
+
+
+
+
+
+html5新增的表单元素
+
+datalist元素
+
+keygen元素
+
+output元素
+
+
+
+
+
+
+
+html5中的输入类型
+
+输入限制：
+
+| disabled  | 规定输入字段应该被禁用。           |
+| --------- | ---------------------------------- |
+| max       | 规定输入字段的最大值。             |
+| maxlength | 规定输入字段的最大字符数。         |
+| min       | 规定输入字段的最小值。             |
+| pattern   | 规定通过其检查输入值的正则表达式。 |
+| readonly  | 规定输入字段为只读（无法修改）。   |
+| required  | 规定输入字段是必需的（必需填写）。 |
+| size      | 规定输入字段的宽度（以字符计）。   |
+| step      | 规定输入字段的合法数字间隔。       |
+| value     | 规定输入字段的默认值。             |
+
+<input type="number">:输入数字值的字段
+
+
+
+<input type="date"> 输入日期
+
+<input type="color">颜色
+
+<input type="range">一定范围内的值
+
+<input type="month">允许输入年份和月份
+
+<input type="week">允许输入周和年
+
+<input type="time">允许选择时间（无时区
+
+<input type="datetime">有时区
+
+……………………
+
+
+
+input属性：
+
+value 规定初始值
+
+readonly 输入字段为只读
+
+disabled 规定输入字段是禁用的（不可用不可点击）
+
+size属性规定了字段的尺寸（文本框长度几个字符）
+
+maxlength 输入字段最大长度
+
+html5中：
+
+autocomplete 表单或者输入字段是否自动完成（开启后 基于之前的输入有提示）
+
+novalida属性属于<form>属性 提交表单时不进行验证
+
+autofocus属性属于booleam属性  如果设置 加载input元素时就会自元素动获得焦点
+
+form属性规定input元素所属的一个或者多个表单
+
+
+
+formaction属性：
+
+​				规定了当提交表单时处理该输入空间的URL
+
+​				覆盖了<form>元素的action属性
+
+​				适用于type=“submit”以及type=“image”
+
+
+
+formenctype 属性:
+
+​			formenctype 属性规定当把表单数据（form-data）提交至服务器时如何对其进行编码（仅针对 method="post" 的表单）。
+
+​			formenctype 属性覆盖 <form> 元素的 enctype 属性。
+
+​			formenctype 属性适用于 type="submit" 以及 type="image"。
+
+
+
+formmethod 属性
+
+​			formmethod 属性定义用以向 action URL 发送表单数据（form-data）的 HTTP 方法。
+
+​			formmethod 属性覆盖 <form> 元素的 method 属性。
+
+​			formmethod 属性适用于 type="submit" 以及 type="image"。
+
+
+
+
+
+height和 width属性：规定了<input>属性的高度和宽度
+
+min和max属性：规定输入的最大最小值（适用于部分type）
+
+multiple属性：允许用户在<input>输入一个以上的值
+
+placeholder属性：用于输入提示
+
+required属性： 在提交表单时必须填写的字段
+
+step属性：合法数字间隔：
 
 
 
@@ -289,4 +717,75 @@ alt属性： 替换文本：用于图片没有加载的时候显示
 
 
 
+html中新的元素：
+
+<article>
+    定义文档内的文章
+</article>
+
+<aside>
+    定义页面内容之外的内容
+</aside>
+
+<bdi>定义
+
+与其他文本不同的文本方向
+
+<details>
+    定义用户可查看或者隐藏的细节
+</details>
+
+<dialog>
+        定义对话框或者窗口
+</dialog>
+
+<figure>
+    定义自包含的内容，比如图示，图表，照片，代码等
+</figure>
+
+<footer>
+    定义页脚
+</footer>
+
+header>
+    定义页眉
+</header>
+
+<main>
+    文章主要内容
+</main>
+
+<mark >
+
+强调
+
+</mark>
+
+
+
+<menuitem>
+
+菜单项
+
+<meter>
+
+定义已知范围内的标尺测量
+
+<nav>
+    导航链接
+</nav>
+
+<progress>
+
+定义任务进度
+
+<rt>
+
+定义字符的发音
+
+<summary>
+
+定义<details>的可见标题
+
+<time>定义时间
 

@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>test</title>
+    <script >document.createElement("myshabi") </script>
+    <style>
+        myshabi{
+            display: block;
+            background-color: red;
+            font-size: larger;
+        }
+    </style>
 </head>
 <!--nmsl注释-->
 <body style="background-color: blanchedalmond;font-size: 40px;">
+
 <h1 style="text-align: center"> my first html</h1>
 <a href="https:/www.baidu.com">百度</a>
 <p aria-orientation="horizontal">段落一</p>
@@ -59,6 +68,58 @@
 
 
 <a href="#warings">提示</a>
+
+<form>
+    <fieldset>
+    1111<br/>
+    <legend> legend表示 fileset 的标题</legend>
+    <input type="password" id="密码">
+    <br/>
+    <input type="radio" id="choiceone" value="one">one
+    <br/>
+    <input type="radio" id="choicetwo" value="two" checked>two
+
+    <input type="submit" value="nmsl">
+
+
+    </fieldset>
+<select name="人名">
+    <option value="ronin">nmsl</option>
+    <option value="zhazhaming">nmsl1</option>
+    <option value="yegou">nmsl2</option>
+
+</select>
+<br/>
+    <textarea name="textarea" rows="10" cols="10">
+        textare测试案例
+    </textarea>
+
+    <button type="button" onclick="alert('nmsl')">button  nmsl</button>
+
+<br/>
+    <input list="browsers">
+    <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+
+
+    <form action="action_page.php" autocomplete="on">
+        First name:<input type="text" name="fname"><br>
+        Last name: <input type="text" name="lname"><br>
+        E-mail: <input type="email" name="email" autocomplete="off"><br>
+        <input type="submit">
+    </form>
+
+</form>
+
+<myshabi>
+    你是蠢
+</myshabi>
+
 <script>
     document.write("hello world");
     alert("nmsl");
