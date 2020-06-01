@@ -4,13 +4,15 @@
     <list default="true" id="5d16249c-36c6-4015-9a0d-f8ea14b5fff6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn-html/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/learn-html/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-learn.md" beforeDir="false" afterPath="$PROJECT_DIR$/web-learn.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="web学习记录" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -56,7 +58,11 @@
       <workItem from="1590301843322" duration="48000" />
       <workItem from="1590427427771" duration="4994000" />
       <workItem from="1590478856278" duration="2329000" />
-      <workItem from="1590562419886" duration="917000" />
+      <workItem from="1590562419886" duration="1400000" />
+      <workItem from="1590565217601" duration="2411000" />
+      <workItem from="1590643383552" duration="4253000" />
+      <workItem from="1590767508080" duration="1044000" />
+      <workItem from="1590808896445" duration="1321000" />
     </task>
     <servers />
   </component>
