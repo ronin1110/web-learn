@@ -580,7 +580,6 @@ html的表单元素：
 <textarea rows="5" cols="5">
     文本域
 </textarea>
-
 <button type="button">表单按钮组件
 
 
@@ -713,11 +712,11 @@ step属性：合法数字间隔：
 
 
 
+![image-20200601100458749](C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20200601100458749.png)
 
 
 
-
-html中新的元素：
+html5中新的元素：
 
 <article>
     定义文档内的文章
@@ -726,7 +725,6 @@ html中新的元素：
 <aside>
     定义页面内容之外的内容
 </aside>
-
 <bdi>定义
 
 与其他文本不同的文本方向
@@ -746,7 +744,6 @@ html中新的元素：
 <footer>
     定义页脚
 </footer>
-
 header>
     定义页眉
 </header>
@@ -754,7 +751,6 @@ header>
 <main>
     文章主要内容
 </main>
-
 <mark >
 
 强调
@@ -772,20 +768,218 @@ header>
 定义已知范围内的标尺测量
 
 <nav>
-    导航链接
+    导航链接	
 </nav>
 
 <progress>
 
-定义任务进度
+​	定义任务进度
 
 <rt>
 
-定义字符的发音
+​	定义字符的发音
 
 <summary>
 
-定义<details>的可见标题
+​	定义<details>的可见标题
 
 <time>定义时间
+
+
+
+article section yu div的差异
+
+在html5中差异很小；
+
+section表示已的是相关元素的块
+
+article表示相关元素的自包含块
+
+div表示子元素的块
+
+
+
+
+
+代码约定：
+
+元素名小写 
+
+关闭所有的html元素
+
+ 关闭空的html元素<br/>
+
+小写属性名
+
+属性值加引号
+
+始终给图像加alt属性  还有图像尺寸
+
+title元素是必须的
+
+
+
+
+
+html5中的canvas
+
+在网页上绘制图形
+
+canvas利用的是javascript在网页上绘制
+
+canvas是元素
+
+
+
+htnl5中的SVG
+
+SVG 指可伸缩矢量图形 (Scalable Vector Graphics
+
+svg使用xml格式定义的图形
+
+放大缩小时图形质量不会丢失
+
+svg是www的标准
+
+
+
+svg的优势：
+
+可通过文本编辑器来创建或者修改
+
+svg可被搜索。索引。脚本化 压缩
+
+可伸缩 高质量打印
+
+放大不降画质
+
+
+
+
+
+
+
+html多媒体：
+
+
+
+object元素是支持html插件：
+
+embed元素的含义是外部（非html）内容的容器
+
+audio元素用来播放音频
+
+
+
+
+
+用雅虎的音频播放器来播放音频：
+
+必须添加代码：
+
+```
+<script type="text/javascript" src="http://mediaplayer.yahoo.com/js"></script>
+```
+
+
+
+
+
+可以用超链接来链接音频
+
+```
+<a href="song.mp3">Play the sound</a>
+```
+
+
+
+
+
+html视频：
+
+embed标签：嵌入视频
+
+video标签：
+
+- 您必须把视频转换为很多不同的格式
+
+- video 元素无法通过 HTML 4 和 XHTML 验证。
+
+- embed 元素无法通过 HTML 4 和 XHTML 验证。
+
+超链接跳转到视频
+
+
+
+
+
+html5的拖放：任何元素斗士可以拖放的
+
+
+
+一个拖拽的过程：
+
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<img id="drag1" src="img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
+
+</body>
+</html>
+```
+
+首先把元素设置为可拖放：draggable=“true”
+
+拖放的内容：ondragstart与setdata（）
+
+​	ondragstart属性调用一个drag（event）函数，规定拖动什么数据。
+
+dataTransfer.setData()设置数据的数据类型与值
+
+```
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+```
+
+数据类型是text  值是对象的id
+
+
+
+拖到何处     ondragover事件，阻止元素的默认打开方式（允许放入到元素中）；
+
+这个任务由ondragover事件的event.preventDefault()方法完成；
+
+
+
+
+
+
+
+
+
+
+
+
 
