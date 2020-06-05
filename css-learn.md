@@ -630,7 +630,7 @@ vertical-align：垂直对齐属性
 
 color:red}
 
-# 总结：
+## 总结：
 
 | 属性                                                         | 描述                                 |
 | :----------------------------------------------------------- | :----------------------------------- |
@@ -639,3 +639,127 @@ color:red}
 | [caption-side](https://www.w3school.com.cn/cssref/pr_tab_caption-side.asp) | 设置表格标题的位置。                 |
 | [empty-cells](https://www.w3school.com.cn/cssref/pr_tab_empty-cells.asp) | 设置是否显示表格中的空单元格。       |
 | [table-layout](https://www.w3school.com.cn/cssref/pr_tab_table-layout.asp) | 设置显示单元、行和列的算法。         |
+
+# css轮廓：
+
+## 总结：
+
+| 属性                                                         | 描述                             | CSS  |
+| :----------------------------------------------------------- | :------------------------------- | ---- |
+| [outline](https://www.w3school.com.cn/cssref/pr_outline.asp) | 在一个声明中设置所有的轮廓属性。 | 2    |
+| [outline-color](https://www.w3school.com.cn/cssref/pr_outline-color.asp) | 设置轮廓的颜色。                 | 2    |
+| [outline-style](https://www.w3school.com.cn/cssref/pr_outline-style.asp) | 设置轮廓的样式。                 | 2    |
+| [outline-width](https://www.w3school.com.cn/cssref/pr_outline-width.asp) | 设置轮廓的宽度。                 |      |
+
+# CSS框模型概述：
+
+![CSS 框模型](https://www.w3school.com.cn/i/ct_boxmodel.gif)
+
+**百分比的数值相对于的是父容器的宽度。上上下边距相对于的也是宽度；**
+
+## css内边距属性：
+
+| 属性                                                         | 描述                                                 |
+| :----------------------------------------------------------- | :--------------------------------------------------- |
+| [padding](https://www.w3school.com.cn/cssref/pr_padding.asp) | 简写属性。作用是在一个声明中设置元素的所内边距属性。 |
+| [padding-bottom](https://www.w3school.com.cn/cssref/pr_padding-bottom.asp) | 设置元素的下内边距。                                 |
+| [padding-left](https://www.w3school.com.cn/cssref/pr_padding-left.asp) | 设置元素的左内边距。                                 |
+| [padding-right](https://www.w3school.com.cn/cssref/pr_padding-right.asp) | 设置元素的右内边距。                                 |
+| [padding-top](https://www.w3school.com.cn/cssref/pr_padding-top.asp) | 设置元素的上内边距。                                 |
+
+## css边框:允许规定样式、宽度、颜色。
+
+### 边框位于背景之上：也就是背景包括了边框、内边距、与元素（css2.1规定）
+
+### 边框的样式：
+
+border-style：outset等10个非inherit样式
+
+可以同时定义多个样式：
+
+例如：
+
+p.aside {border-style: solid dotted dashed double;}
+
+为类名为aside的段落定义了四种样式：实线上边框；点线右边框；虚线下边框；双线下边框。
+
+顺序为上右下左；设置内边距时 也是这个顺序；
+
+### 定义单边样式：
+
+- [border-top-style](https://www.w3school.com.cn/cssref/pr_border-top_style.asp)
+- [border-right-style](https://www.w3school.com.cn/cssref/pr_border-right_style.asp)
+- [border-bottom-style](https://www.w3school.com.cn/cssref/pr_border-bottom_style.asp)
+- [border-left-style](https://www.w3school.com.cn/cssref/pr_border-left_style.asp)
+
+```
+p {border-style: solid solid solid none;}
+p {border-style: solid; border-left-style: none;}
+```
+
+上述两种方法相等。（注意先后顺序  会覆盖）
+
+## 边框宽度：
+
+border-width：可以是指定长度值也可以是三个关键字之一（thin medium thick）
+
+### 单边宽度设置：
+
+```
+p {border-style: solid; border-width: 15px 5px 15px 5px;}
+```
+
+顺序还是上右下左
+
+- [border-top-width](https://www.w3school.com.cn/cssref/pr_border-top_width.asp)
+- [border-right-width](https://www.w3school.com.cn/cssref/pr_border-right_width.asp)
+- [border-bottom-width](https://www.w3school.com.cn/cssref/pr_border-bottom_width.asp)
+- [border-left-width](https://www.w3school.com.cn/cssref/pr_border-left_width.asp)
+
+如果没有声明边框样式：那边框就不会显示：
+
+相当于border-style：none
+
+none的值意味着没有边框。
+
+**因此，如果您希望边框出现，就必须声明一个边框样式。**
+
+
+
+边框颜色border-color：十六进制或者rgb
+
+默认的边框颜色是元素本身的前景色。如果没有为边框声明颜色，它将与元素的文本颜色相同。另一方面，如果元素没有任何文本，假设它是一个表格，其中只包含图像，那么该表的边框颜色就是其父元素的文本颜色（因为 color 可以继承）
+
+### 定义单边颜色：
+
+
+
+- [border-top-color](https://www.w3school.com.cn/cssref/pr_border-top_color.asp)
+- [border-right-color](https://www.w3school.com.cn/cssref/pr_border-right_color.asp)
+- [border-bottom-color](https://www.w3school.com.cn/cssref/pr_border-bottom_color.asp)
+- [border-left-color](https://www.w3school.com.cn/cssref/pr_border-left_color.asp)
+
+## 总结：
+
+| 属性                                                         | 描述                                                         |
+| :----------------------------------------------------------- | :----------------------------------------------------------- |
+| [border](https://www.w3school.com.cn/cssref/pr_border.asp)   | 简写属性，用于把针对四个边的属性设置在一个声明。             |
+| [border-style](https://www.w3school.com.cn/cssref/pr_border-style.asp) | 用于设置元素所有边框的样式，或者单独地为各边设置边框样式。   |
+| [border-width](https://www.w3school.com.cn/cssref/pr_border-width.asp) | 简写属性，用于为元素的所有边框设置宽度，或者单独地为各边边框设置宽度。 |
+| [border-color](https://www.w3school.com.cn/cssref/pr_border-color.asp) | 简写属性，设置元素的所有边框中可见部分的颜色，或为 4 个边分别设置颜色。 |
+| [border-bottom](https://www.w3school.com.cn/cssref/pr_border-bottom.asp) | 简写属性，用于把下边框的所有属性设置到一个声明中。           |
+| [border-bottom-color](https://www.w3school.com.cn/cssref/pr_border-bottom_color.asp) | 设置元素的下边框的颜色。                                     |
+| [border-bottom-style](https://www.w3school.com.cn/cssref/pr_border-bottom_style.asp) | 设置元素的下边框的样式。                                     |
+| [border-bottom-width](https://www.w3school.com.cn/cssref/pr_border-bottom_width.asp) | 设置元素的下边框的宽度。                                     |
+| [border-left](https://www.w3school.com.cn/cssref/pr_border-left.asp) | 简写属性，用于把左边框的所有属性设置到一个声明中。           |
+| [border-left-color](https://www.w3school.com.cn/cssref/pr_border-left_color.asp) | 设置元素的左边框的颜色。                                     |
+| [border-left-style](https://www.w3school.com.cn/cssref/pr_border-left_style.asp) | 设置元素的左边框的样式。                                     |
+| [border-left-width](https://www.w3school.com.cn/cssref/pr_border-left_width.asp) | 设置元素的左边框的宽度。                                     |
+| [border-right](https://www.w3school.com.cn/cssref/pr_border-right.asp) | 简写属性，用于把右边框的所有属性设置到一个声明中。           |
+| [border-right-color](https://www.w3school.com.cn/cssref/pr_border-right_color.asp) | 设置元素的右边框的颜色。                                     |
+| [border-right-style](https://www.w3school.com.cn/cssref/pr_border-right_style.asp) | 设置元素的右边框的样式。                                     |
+| [border-right-width](https://www.w3school.com.cn/cssref/pr_border-right_width.asp) | 设置元素的右边框的宽度。                                     |
+| [border-top](https://www.w3school.com.cn/cssref/pr_border-top.asp) | 简写属性，用于把上边框的所有属性设置到一个声明中。           |
+| [border-top-color](https://www.w3school.com.cn/cssref/pr_border-top_color.asp) | 设置元素的上边框的颜色。                                     |
+| [border-top-style](https://www.w3school.com.cn/cssref/pr_border-top_style.asp) | 设置元素的上边框的样式。                                     |
+| [border-top-width](https://www.w3school.com.cn/cssref/pr_border-top_width.asp) | 设置元素的上边框的宽度。                                     |
