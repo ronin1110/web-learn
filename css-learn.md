@@ -763,3 +763,200 @@ none的值意味着没有边框。
 | [border-top-color](https://www.w3school.com.cn/cssref/pr_border-top_color.asp) | 设置元素的上边框的颜色。                                     |
 | [border-top-style](https://www.w3school.com.cn/cssref/pr_border-top_style.asp) | 设置元素的上边框的样式。                                     |
 | [border-top-width](https://www.w3school.com.cn/cssref/pr_border-top_width.asp) | 设置元素的上边框的宽度。                                     |
+
+### css外边距：margin属性
+
+位于元素边框的外面，属性值可以是长度、百分比、甚至负值、
+
+margin属性值得顺序也是上右下左；
+
+允许值复制；
+
+- 如果缺少左外边距的值，则使用右外边距的值。
+- 如果缺少下外边距的值，则使用上外边距的值。
+- 如果缺少右外边距的值，则使用上外边距的值。
+
+### 单边外边距属性：
+
+- [margin-top](https://www.w3school.com.cn/cssref/pr_margin-top.asp)
+- [margin-right](https://www.w3school.com.cn/cssref/pr_margin-right.asp)
+- [margin-bottom](https://www.w3school.com.cn/cssref/pr_margin-bottom.asp)
+- [margin-left](https://www.w3school.com.cn/cssref/pr_margin-left.asp)
+
+## 外边距合并：
+
+当两个垂直外边距相遇时，塔湖形成一个外边距，合并后的外边距等于两个发生合并的外边距中高度中的较大者
+
+
+
+出现的问题：
+
+元素包含元素时（没有内边距或者边框分割开），也会进行合并
+
+自己的上下边距也会进行合并
+
+只有普通文档流中块框的垂直外边距才会发生外边距合并。行内框、浮动框或绝对定位之间的外边距不会合并
+
+# css定位
+
+一切皆尾框。
+
+css的三种定位机制：普通流，浮动，绝对定位
+
+## css的 position属性：
+
+### static:
+
+元素框正常形成，块级元素生成矩形框，行内元素则会创建一个或者多个行框，至于父元素中；
+
+### relative：
+
+元素框偏移某个距离；所占空间不变
+
+### absolute:
+
+元素框从文档流完全删除：并相对于其包含块定位。元素定位后形成一个块级框。无论之前是什么类型的框
+
+## fixed:
+
+类似于absolute，不过其包含块是视窗
+
+
+
+## 总结：
+
+| 属性                                                         | 描述                                                         |
+| :----------------------------------------------------------- | :----------------------------------------------------------- |
+| [position](https://www.w3school.com.cn/cssref/pr_class_position.asp) | 把元素放置到一个静态的、相对的、绝对的、或固定的位置中。     |
+| [top](https://www.w3school.com.cn/cssref/pr_pos_top.asp)     | 定义了一个定位元素的上外边距边界与其包含块上边界之间的偏移。 |
+| [right](https://www.w3school.com.cn/cssref/pr_pos_right.asp) | 定义了定位元素右外边距边界与其包含块右边界之间的偏移。       |
+| [bottom](https://www.w3school.com.cn/cssref/pr_pos_bottom.asp) | 定义了定位元素下外边距边界与其包含块下边界之间的偏移。       |
+| [left](https://www.w3school.com.cn/cssref/pr_pos_left.asp)   | 定义了定位元素左外边距边界与其包含块左边界之间的偏移。       |
+| [overflow](https://www.w3school.com.cn/cssref/pr_pos_overflow.asp) | 设置当元素的内容溢出其区域时发生的事情。                     |
+| [clip](https://www.w3school.com.cn/cssref/pr_pos_clip.asp)   | 设置元素的形状。元素被剪入这个形状之中，然后显示出来。       |
+| [vertical-align](https://www.w3school.com.cn/cssref/pr_pos_vertical-align.asp) | 设置元素的垂直对齐方式。                                     |
+| [z-index](https://www.w3school.com.cn/cssref/pr_pos_z-index.asp) | 设置元素的堆叠顺序。                                         |
+
+# css选择器
+
+## 元素选择器：
+
+某个html元素：
+
+html{ color:black}
+
+## 选择器分组：
+
+例如：
+
+h1,p{ color:gray;}
+
+
+
+## 通配符选择器：
+
+*{color：red}
+
+## 声明分组：
+
+h1{font:27px }
+
+h1{color:blue}
+
+h1{background:red}
+
+等价于：h1{font  27px;color:blue;background:red}
+
+# 伪类：
+
+| 属性                                                         | 描述                                     | CSS  |
+| :----------------------------------------------------------- | :--------------------------------------- | :--- |
+| [:active](https://www.w3school.com.cn/cssref/pr_pseudo_active.asp) | 向被激活的元素添加样式。                 | 1    |
+| [:focus](https://www.w3school.com.cn/cssref/pr_pseudo_focus.asp) | 向拥有键盘输入焦点的元素添加样式。       | 2    |
+| [:hover](https://www.w3school.com.cn/cssref/pr_pseudo_hover.asp) | 当鼠标悬浮在元素上方时，向元素添加样式。 | 1    |
+| [:link](https://www.w3school.com.cn/cssref/pr_pseudo_link.asp) | 向未被访问的链接添加样式。               | 1    |
+| [:visited](https://www.w3school.com.cn/cssref/pr_pseudo_visited.asp) | 向已被访问的链接添加样式。               | 1    |
+| [:first-child](https://www.w3school.com.cn/cssref/pr_pseudo_first-child.asp) | 向元素的第一个子元素添加样式。           | 2    |
+| [:lang](https://www.w3school.com.cn/cssref/pr_pseudo_lang.asp) | 向带有指定 lang 属性的元素添加样式。     |      |
+
+
+
+
+
+
+
+
+
+# 2Dtransform方法：
+
+| 函数                            | 描述                                     |
+| :------------------------------ | :--------------------------------------- |
+| matrix(*n*,*n*,*n*,*n*,*n*,*n*) | 定义 2D 转换，使用六个值的矩阵。         |
+| translate(*x*,*y*)              | 定义 2D 转换，沿着 X 和 Y 轴移动元素。   |
+| translateX(*n*)                 | 定义 2D 转换，沿着 X 轴移动元素。        |
+| translateY(*n*)                 | 定义 2D 转换，沿着 Y 轴移动元素。        |
+| scale(*x*,*y*)                  | 定义 2D 缩放转换，改变元素的宽度和高度。 |
+| scaleX(*n*)                     | 定义 2D 缩放转换，改变元素的宽度。       |
+| scaleY(*n*)                     | 定义 2D 缩放转换，改变元素的高度。       |
+| rotate(*angle*)                 | 定义 2D 旋转，在参数中规定角度。         |
+| skew(*x-angle*,*y-angle*)       | 定义 2D 倾斜转换，沿着 X 和 Y 轴。       |
+| skewX(*angle*)                  | 定义 2D 倾斜转换，沿着 X 轴。            |
+| skewY(*angle*)                  | 定义 2D 倾斜转换，沿着 Y 轴。            |
+
+# 3Dtransform方法：
+
+| 函数                                                         | 描述                                      |
+| :----------------------------------------------------------- | :---------------------------------------- |
+| matrix3d(*n*,*n*,*n*,*n*,*n*,*n*, *n*,*n*,*n*,*n*,*n*,*n*,*n*,*n*,*n*,*n*) | 定义 3D 转换，使用 16 个值的 4x4 矩阵。   |
+| translate3d(*x*,*y*,*z*)                                     | 定义 3D 转化。                            |
+| translateX(*x*)                                              | 定义 3D 转化，仅使用用于 X 轴的值。       |
+| translateY(*y*)                                              | 定义 3D 转化，仅使用用于 Y 轴的值。       |
+| translateZ(*z*)                                              | 定义 3D 转化，仅使用用于 Z 轴的值。       |
+| scale3d(*x*,*y*,*z*)                                         | 定义 3D 缩放转换。                        |
+| scaleX(*x*)                                                  | 定义 3D 缩放转换，通过给定一个 X 轴的值。 |
+| scaleY(*y*)                                                  | 定义 3D 缩放转换，通过给定一个 Y 轴的值。 |
+| scaleZ(*z*)                                                  | 定义 3D 缩放转换，通过给定一个 Z 轴的值。 |
+| rotate3d(*x*,*y*,*z*,*angle*)                                | 定义 3D 旋转。                            |
+| rotateX(*angle*)                                             | 定义沿 X 轴的 3D 旋转。                   |
+| rotateY(*angle*)                                             | 定义沿 Y 轴的 3D 旋转。                   |
+| rotateZ(*angle*)                                             | 定义沿 Z 轴的 3D 旋转。                   |
+| perspective(*n*)                                             | 定义 3D 转换元素的透视视图。              |
+
+# 过渡属性：
+
+| 属性                                                         | 描述                                         | CSS  |
+| :----------------------------------------------------------- | :------------------------------------------- | :--- |
+| [transition](https://www.w3school.com.cn/cssref/pr_transition.asp) | 简写属性，用于在一个属性中设置四个过渡属性。 | 3    |
+| [transition-property](https://www.w3school.com.cn/cssref/pr_transition-property.asp) | 规定应用过渡的 CSS 属性的名称。              | 3    |
+| [transition-duration](https://www.w3school.com.cn/cssref/pr_transition-duration.asp) | 定义过渡效果花费的时间。默认是 0。           | 3    |
+| [transition-timing-function](https://www.w3school.com.cn/cssref/pr_transition-timing-function.asp) | 规定过渡效果的时间曲线。默认是 "ease"。      | 3    |
+| [transition-delay](https://www.w3school.com.cn/cssref/pr_transition-delay.asp) | 规定过渡效果何时开始。默认是 0。             | 3    |
+
+# 新的用户界面属性：
+
+| 属性                                                         | 描述                                               | CSS  |
+| :----------------------------------------------------------- | :------------------------------------------------- | :--- |
+| [appearance](https://www.w3school.com.cn/cssref/pr_appearance.asp) | 允许您将元素设置为标准用户界面元素的外观           | 3    |
+| [box-sizing](https://www.w3school.com.cn/cssref/pr_box-sizing.asp) | 允许您以确切的方式定义适应某个区域的具体内容。     | 3    |
+| [icon](https://www.w3school.com.cn/cssref/pr_icon.asp)       | 为创作者提供使用图标化等价物来设置元素样式的能力。 | 3    |
+| [nav-down](https://www.w3school.com.cn/cssref/pr_nav-down.asp) | 规定在使用 arrow-down 导航键时向何处导航。         | 3    |
+| [nav-index](https://www.w3school.com.cn/cssref/pr_nav-index.asp) | 设置元素的 tab 键控制次序。                        | 3    |
+| [nav-left](https://www.w3school.com.cn/cssref/pr_nav-left.asp) | 规定在使用 arrow-left 导航键时向何处导航。         | 3    |
+| [nav-right](https://www.w3school.com.cn/cssref/pr_nav-right.asp) | 规定在使用 arrow-right 导航键时向何处导航。        | 3    |
+| [nav-up](https://www.w3school.com.cn/cssref/pr_nav-up.asp)   | 规定在使用 arrow-up 导航键时向何处导航。           | 3    |
+| [outline-offset](https://www.w3school.com.cn/cssref/pr_outline-offset.asp) | 对轮廓进行偏移，并在超出边框边缘的位置绘制轮廓。   | 3    |
+| [resize](https://www.w3school.com.cn/cssref/pr_resize.asp)   | 规定是否可由用户对元素的尺寸进行调整。             | 3    |
+
+# 单位：
+
+| 单位 | 描述                                                         |
+| :--- | :----------------------------------------------------------- |
+| %    | 百分比                                                       |
+| in   | 英寸                                                         |
+| cm   | 厘米                                                         |
+| mm   | 毫米                                                         |
+| em   | 1em 等于当前的字体尺寸。2em 等于当前字体尺寸的两倍。例如，如果某元素以 12pt 显示，那么 2em 是24pt。在 CSS 中，em 是非常有用的单位，因为它可以自动适应用户所使用的字体。 |
+| ex   | 一个 ex 是一个字体的 x-height。 (x-height 通常是字体尺寸的一半。) |
+| pt   | 磅 (1 pt 等于 1/72 英寸)                                     |
+| pc   | 12 点活字 (1 pc 等于 12 点)                                  |
+| px   | 像素 (计算机屏幕上的一个点)                                  |
