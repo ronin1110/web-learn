@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d16249c-36c6-4015-9a0d-f8ea14b5fff6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/css-learn.md" beforeDir="false" afterPath="$PROJECT_DIR$/css-learn.md" afterDir="false" />
-    </list>
+    <list default="true" id="5d16249c-36c6-4015-9a0d-f8ea14b5fff6" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +62,7 @@
       <workItem from="1590808896445" duration="1321000" />
       <workItem from="1590976177373" duration="5649000" />
       <workItem from="1591502858274" duration="597000" />
+      <workItem from="1591696609330" duration="113000" />
     </task>
     <servers />
   </component>
